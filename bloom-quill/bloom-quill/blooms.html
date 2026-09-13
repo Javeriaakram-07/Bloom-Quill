@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Blooms - Bloom & Quill</title>
+    <meta
+      name="description"
+      content="Hand-tied bouquets and botanical arrangements from Bloom & Quill. Build your own bouquet."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="index.html" class="brand">
+          <span class="brand-name">Bloom &amp; Quill</span>
+          <span class="brand-sub">a florist's sketchbook</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blooms.html" aria-current="page">The Blooms</a></li>
+          <li><a href="sketchbook.html">Sketchbook</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button
+          class="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section style="padding-bottom: 0">
+        <div class="container" style="text-align: center; max-width: 680px">
+          <span class="eyebrow-note hand">the current sketchbook page</span>
+          <h1 style="font-size: clamp(2.2rem, 4.5vw, 3.4rem)">
+            What's blooming<br />this week.
+          </h1>
+          <p>
+            Tap the
+            <span
+              class="hand"
+              style="font-size: 1.1rem; color: var(--rose-deep)"
+              >+</span
+            >
+            on anything you like - build a little bouquet in the corner and
+            watch it come together as you go.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="filter-row reveal">
+            <button class="chip is-active" data-filter="all">All</button>
+            <button class="chip" data-filter="rose">Roses</button>
+            <button class="chip" data-filter="wild">Wildflower</button>
+            <button class="chip" data-filter="pastel">Pastel</button>
+            <button class="chip" data-filter="dried">
+              Dried &amp; Pressed
+            </button>
+          </div>
+
+          <div class="bloom-grid">
+            <article
+              class="bloom-card reveal"
+              data-id="rose-01"
+              data-name="The Victorian"
+              data-price="2400"
+              data-tag="rose"
+            >
+              <div class="ph">
+                <img
+                  src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=500&q=80"
+                  alt="Deep red rose bouquet"
+                />
+              </div>
+              <div class="bloom-body">
+                <span class="bloom-tag hand">a velvet sort of romance</span>
+                <h3>The Victorian</h3>
+                <div class="bloom-foot">
+                  <span class="bloom-price">Rs 2,400</span>
+                  <button
+                    class="add-btn"
+                    aria-label="Add The Victorian to bouquet"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bloom-card reveal"
+              data-id="wild-01"
+              data-name="Meadow Letter"
+              data-price="1800"
+              data-tag="wild"
+            >
+              <div class="ph">
+                <img
+                  src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=500&q=80"
+                  alt="Loose wildflower bouquet"
+                />
+              </div>
+              <div class="bloom-body">
+                <span class="bloom-tag hand">looks like it wrote itself</span>
+                <h3>Meadow Letter</h3>
+                <div class="bloom-foot">
+                  <span class="bloom-price">Rs 1,800</span>
+                  <button
+                    class="add-btn"
+                    aria-label="Add Meadow Letter to bouquet"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bloom-card reveal"
+              data-id="pastel-01"
+              data-name="Belle & Blossom"
+              data-price="2100"
+              data-tag="pastel"
+            >
+              <div class="ph">
+                <img
+                  src="https://images.unsplash.com/photo-1487070183336-b863922373d4?w=500&q=80"
+                  alt="Soft pastel peony bouquet"
+                />
+              </div>
+              <div class="bloom-body">
+                <span class="bloom-tag hand">soft-spoken, still loud</span>
+                <h3>Belle &amp; Blossom</h3>
+                <div class="bloom-foot">
+                  <span class="bloom-price">Rs 2,100</span>
+                  <button
+                    class="add-btn"
+                    aria-label="Add Belle and Blossom to bouquet"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bloom-card reveal"
+              data-id="dried-01"
+              data-name="Ink & Straw"
+              data-price="1600"
+              data-tag="dried"
+            >
+              <div class="ph">
+                <img
+                  src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=500&q=80"
+                  alt="Dried flower arrangement"
+                />
+              </div>
+              <div class="bloom-body">
+                <span class="bloom-tag hand"
+                  >lasts long after the note fades</span
+                >
+                <h3>Ink &amp; Straw</h3>
+                <div class="bloom-foot">
+                  <span class="bloom-price">Rs 1,600</span>
+                  <button
+                    class="add-btn"
+                    aria-label="Add Ink and Straw to bouquet"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bloom-card reveal"
+              data-id="rose-02"
+              data-name="Quiet Blush"
+              data-price="2200"
+              data-tag="rose"
+            >
+              <div class="ph">
+                <img
+                  src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=500&q=80"
+                  alt="Blush pink rose bouquet"
+                />
+              </div>
+              <div class="bloom-body">
+                <span class="bloom-tag hand">a whisper, not a headline</span>
+                <h3>Quiet Blush</h3>
+                <div class="bloom-foot">
+                  <span class="bloom-price">Rs 2,200</span>
+                  <button
+                    class="add-btn"
+                    aria-label="Add Quiet Blush to bouquet"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bloom-card reveal"
+              data-id="wild-02"
+              data-name="Marginalia"
+              data-price="1950"
+              data-tag="wild"
+            >
+              <div class="ph">
+                <img
+                  src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500&q=80"
+                  alt="Wild garden bouquet with greenery"
+                />
+              </div>
+              <div class="bloom-body">
+                <span class="bloom-tag hand"
+                  >notes scribbled in the margins</span
+                >
+                <h3>Marginalia</h3>
+                <div class="bloom-foot">
+                  <span class="bloom-price">Rs 1,950</span>
+                  <button
+                    class="add-btn"
+                    aria-label="Add Marginalia to bouquet"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bloom-card reveal"
+              data-id="pastel-02"
+              data-name="First Draft"
+              data-price="1750"
+              data-tag="pastel"
+            >
+              <div class="ph">
+                <img
+                  src="https://images.unsplash.com/photo-1462530260150-162092dbf011?w=500&q=80"
+                  alt="Pastel tulip bouquet"
+                />
+              </div>
+              <div class="bloom-body">
+                <span class="bloom-tag hand">unfinished, on purpose</span>
+                <h3>First Draft</h3>
+                <div class="bloom-foot">
+                  <span class="bloom-price">Rs 1,750</span>
+                  <button
+                    class="add-btn"
+                    aria-label="Add First Draft to bouquet"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bloom-card reveal"
+              data-id="dried-02"
+              data-name="The Pressed Page"
+              data-price="1400"
+              data-tag="dried"
+            >
+              <div class="ph">
+                <img
+                  src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=500&q=80&sat=-30"
+                  alt="Pressed flowers framed"
+                />
+              </div>
+              <div class="bloom-body">
+                <span class="bloom-tag hand">a bookmark, more or less</span>
+                <h3>The Pressed Page</h3>
+                <div class="bloom-foot">
+                  <span class="bloom-price">Rs 1,400</span>
+                  <button
+                    class="add-btn"
+                    aria-label="Add The Pressed Page to bouquet"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bloom-card reveal"
+              data-id="rose-03"
+              data-name="Old Letters"
+              data-price="2600"
+              data-tag="rose"
+            >
+              <div class="ph">
+                <img
+                  src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=500&q=80"
+                  alt="Antique rose bouquet"
+                />
+              </div>
+              <div class="bloom-body">
+                <span class="bloom-tag hand"
+                  >for someone you've loved a while</span
+                >
+                <h3>Old Letters</h3>
+                <div class="bloom-foot">
+                  <span class="bloom-price">Rs 2,600</span>
+                  <button
+                    class="add-btn"
+                    aria-label="Add Old Letters to bouquet"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="builder">
+      <button class="builder-toggle" aria-label="Open bouquet builder">
+        &#127808;
+        <span class="builder-count">0</span>
+      </button>
+      <div class="builder-panel">
+        <h3>Your bouquet</h3>
+        <p
+          class="hand"
+          style="color: var(--sage-deep); font-size: 1rem; margin: 0 0 14px"
+        >
+          build it stem by stem
+        </p>
+        <div class="bouquet-visual"></div>
+        <div class="tray-list"></div>
+        <div class="tray-total">
+          <span>Total</span>
+          <span class="tray-total-amount">Rs 0</span>
+        </div>
+        <p class="bouquet-note"></p>
+        <a
+          href="contact.html"
+          class="btn btn-primary"
+          style="width: 100%; justify-content: center; margin-top: 14px"
+          >Enquire about this bouquet</a
+        >
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Bloom &amp; Quill</h4>
+            <p>
+              A small botanical studio run by Javeria Akram, arranging flowers
+              like lines of poetry since the notion first struck her in an old
+              notebook margin.
+            </p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="blooms.html">The Blooms</a></li>
+              <li><a href="sketchbook.html">Sketchbook</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Reach us</h4>
+            <ul>
+              <li>
+                <a href="mailto:javeriaakrm259@gmail.com"
+                  >javeriaakrm259@gmail.com</a
+                >
+              </li>
+              <li>Lahore, Pakistan</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2026 Bloom &amp; Quill - Javeria Akram. Every bouquet, sketched
+          first.
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
