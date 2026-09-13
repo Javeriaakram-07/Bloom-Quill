@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom & Quill - a florist's sketchbook</title>
+<meta name="description" content="Bloom & Quill is a small botanical studio by Javeria Akram hand-tied bouquets, pressed-flower art, and a sketchbook of blooms.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">
+      <span class="brand-name">Bloom &amp; Quill</span>
+      <span class="brand-sub">a florist's sketchbook</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blooms.html">The Blooms</a></li>
+      <li><a href="sketchbook.html">Sketchbook</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <canvas id="petal-canvas" aria-hidden="true"></canvas>
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow-note hand">est. by a girl who loved ink and gardens</span>
+        <h1>Flowers, arranged<br>like <em>a line of poetry.</em></h1>
+        <p class="hero-lede">Bloom &amp; Quill is a one-woman botanical studio every bouquet sketched
+          before it's cut, every stem chosen the way you'd choose a word. Based in Lahore,
+          shipped in brown paper and quiet care.</p>
+        <div class="hero-actions">
+          <a href="blooms.html" class="btn btn-primary">Browse the Blooms</a>
+          <a href="about.html" class="btn btn-ghost">Read our story</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg id="rose-sketch" viewBox="0 0 320 360" xmlns="http://www.w3.org/2000/svg">
+          <path class="fill-sage" d="M160 200 C 150 250, 140 300, 150 345" />
+          <path d="M150 260 C 130 250, 110 255, 98 240" />
+          <path d="M155 300 C 175 295, 190 305, 200 292" />
+          <path class="fill-sage" d="M98 240 C 90 225, 100 210, 118 212 C 130 214, 132 232, 118 238 C 108 242, 100 244, 98 240 Z" />
+          <path class="fill-sage" d="M200 292 C 216 285, 218 268, 202 262 C 190 258, 180 272, 190 284 C 195 290, 198 292, 200 292 Z" />
+          <path class="fill-rose" d="M160 90 C 120 95, 100 130, 118 165 C 100 175, 96 205, 120 220 C 140 235, 180 235, 200 220 C 224 205, 220 175, 200 165 C 218 130, 200 95, 160 90 Z" />
+          <path d="M160 100 C 140 108, 132 128, 148 140 C 134 150, 132 168, 150 178" />
+          <path d="M160 100 C 180 108, 188 128, 172 140 C 186 150, 188 168, 170 178" />
+          <path d="M148 178 C 155 188, 165 188, 172 178" />
+          <path d="M130 150 C 122 162, 126 178, 140 184" />
+          <path d="M190 150 C 198 162, 194 178, 180 184" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="hand" style="font-size:1.3rem;color:var(--sage-deep)">what we do</span>
+        <h2>Three ways to bring a garden indoors</h2>
+        <svg class="ink-divider" viewBox="0 0 220 34"><path d="M4 20 Q 40 4, 70 18 T 140 16 T 216 20"/></svg>
+      </div>
+
+      <div class="bloom-grid">
+        <article class="torn-card reveal">
+          <h3>Hand-tied Bouquets</h3>
+          <p>Loose, garden-style arrangements built stem by stem - nothing wired, nothing forced
+            into place. Delivered still a little wild.</p>
+        </article>
+        <article class="torn-card reveal" style="transition-delay:.1s">
+          <h3>Pressed &amp; Painted</h3>
+          <p>Botanical studies pressed between the pages of an old notebook, then framed -
+            a keepsake for people who love flowers longer than a week.</p>
+        </article>
+        <article class="torn-card reveal" style="transition-delay:.2s">
+          <h3>Seasonal Subscriptions</h3>
+          <p>A fresh bundle at your door every fortnight, chosen by whatever's blooming -
+            no two deliveries look the same.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--paper-deep); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="hand" style="font-size:1.3rem;color:var(--rose-deep)">from the sketchbook</span>
+        <h2>A few recent studies</h2>
+      </div>
+      <div class="gallery" style="columns:3 200px;">
+        <figure class="reveal">
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500&q=80" alt="Sketchbook study of garden roses">
+          <figcaption>garden roses, ink &amp; watercolour</figcaption>
+        </figure>
+        <figure class="reveal" style="transition-delay:.1s">
+          <img src="https://images.unsplash.com/photo-1502786129293-79981df4e689?w=500&q=80" alt="Study of a wild bouquet">
+          <figcaption>the wild bunch, study no. 4</figcaption>
+        </figure>
+        <figure class="reveal" style="transition-delay:.2s">
+          <img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?w=500&q=80" alt="Pressed peony study">
+          <figcaption>peony, pressed &amp; framed</figcaption>
+        </figure>
+      </div>
+      <p style="text-align:center;margin-top:10px;">
+        <a href="sketchbook.html" class="btn btn-ghost">Open the full sketchbook &rarr;</a>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="max-width:720px;text-align:center;">
+      <span class="hand reveal" style="font-size:1.4rem;color:var(--sage-deep)">a note, before you go</span>
+      <h2 class="reveal">"I never sell a flower I wouldn't want<br>pressed into my own notebook."</h2>
+      <p class="reveal">&mdash; Javeria Akram, founder</p>
+      <p class="reveal" style="margin-top:24px;">
+        <a href="contact.html" class="btn btn-primary">Say hello</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Bloom &amp; Quill</h4>
+        <p>A small botanical studio run by Javeria Akram, arranging flowers like lines of
+          poetry since the notion first struck her in an old notebook margin.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blooms.html">The Blooms</a></li>
+          <li><a href="sketchbook.html">Sketchbook</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li><a href="mailto:javeriaakrm259@gmail.com">javeriaakrm259@gmail.com</a></li>
+          <li>Lahore, Pakistan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Bloom &amp; Quill - Javeria Akram. Every bouquet, sketched first.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

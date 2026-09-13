@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Bloom & Quill</title>
+<meta name="description" content="Get in touch with Bloom & Quill to order a bouquet or ask about a custom arrangement.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">
+      <span class="brand-name">Bloom &amp; Quill</span>
+      <span class="brand-sub">a florist's sketchbook</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blooms.html">The Blooms</a></li>
+      <li><a href="sketchbook.html">Sketchbook</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section style="padding-bottom:0;">
+    <div class="container" style="text-align:center;max-width:680px;">
+      <span class="eyebrow-note hand">write to us</span>
+      <h1 style="font-size:clamp(2.2rem,4.5vw,3.4rem);">Leave a note<br>in the margin.</h1>
+      <p>Tell us the occasion, the colours you love, or just say hello -
+        as you type, your note gets written out on the page beside it.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container contact-grid">
+
+      <div class="reveal">
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="c-name">Your name</label>
+            <input type="text" id="c-name" name="name" placeholder="Javeria Akram" autocomplete="name">
+            <div class="error-msg"></div>
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" placeholder="you@email.com" autocomplete="email">
+            <div class="error-msg"></div>
+          </div>
+          <div class="field">
+            <label for="c-message">Your note</label>
+            <textarea id="c-message" name="message" placeholder="Tell us about the occasion, the colours, or the person it's for..."></textarea>
+            <div class="error-msg"></div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send the note</button>
+          <div class="form-success" role="status"></div>
+        </form>
+
+        <ul class="info-list">
+          <li><span class="lbl">Email</span><a href="mailto:javeriaakrm259@gmail.com">javeriaakrm259@gmail.com</a></li>
+          <li><span class="lbl">Studio</span>Lahore, Pakistan</li>
+          <li><span class="lbl">Hours</span>Tuesday &ndash; Sunday, 10am &ndash; 6pm</li>
+        </ul>
+      </div>
+
+      <div class="reveal" style="transition-delay:.1s">
+        <div class="ink-preview">
+          <div class="to-line">Dear Bloom &amp; Quill,</div>
+          <div id="preview-body">Your note will appear here, written out in ink&hellip;</div>
+          <div id="preview-sign"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Bloom &amp; Quill</h4>
+        <p>A small botanical studio run by Javeria Akram, arranging flowers like lines of
+          poetry since the notion first struck her in an old notebook margin.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blooms.html">The Blooms</a></li>
+          <li><a href="sketchbook.html">Sketchbook</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li><a href="mailto:javeriaakrm259@gmail.com">javeriaakrm259@gmail.com</a></li>
+          <li>Lahore, Pakistan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Bloom &amp; Quill - Javeria Akram. Every bouquet, sketched first.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
