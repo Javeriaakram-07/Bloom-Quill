@@ -40,33 +40,6 @@ No build step needed. Either:
 - Open `index.html` directly in a browser, or
 - Serve it locally: `python3 -m http.server` from this folder, then visit `localhost:8000`
 
-## Suggested Git branching workflow (per assignment requirements)
-```bash
-git init
-git add .
-git commit -m "Initial commit: project scaffold"
-git checkout -b feature-navbar
-# build/tweak the header + nav, commit
-git checkout main
-git merge feature-navbar
-
-git checkout -b feature-bouquet-builder
-# build the builder logic in blooms.html + main.js, commit
-git checkout main
-git merge feature-bouquet-builder
-
-git checkout -b feature-contact-form
-# build validation + ink preview, commit
-git checkout main
-git merge feature-contact-form
-
-git checkout -b feature-gallery
-# build lightbox + filters, commit
-git checkout main
-git merge feature-gallery
-
-git remote add origin <your-repo-url>
-git push -u origin main
 ```
 
 Use similarly meaningful commit messages as you go (e.g. "Add scroll-reveal animation to
