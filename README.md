@@ -40,15 +40,4 @@ No build step needed. Either:
 - Open `index.html` directly in a browser, or
 - Serve it locally: `python3 -m http.server` from this folder, then visit `localhost:8000`
 
-```
 
-Use similarly meaningful commit messages as you go (e.g. "Add scroll-reveal animation to
-homepage sections", "Add form validation with inline error messages") rather than "update" -
-you'll be asked to justify your commit history in the viva.
-
-## Notes for viva
-- Flower photos are pulled live from Unsplash by URL - swap in your own photos in `/images`
-  and update the `src` attributes if you'd rather not depend on an internet connection during
-  the viva.
-- All animation respects `prefers-reduced-motion`.
-- Every interactive control (accordion, lightbox, hamburger, form) is keyboard accessible.
